@@ -1,7 +1,8 @@
 import { MongoClient, ServerApiVersion } from "mongodb";
 import config from "./config";
+const { mongoUri } = config;
 
-const client = new MongoClient(config.mongoUri, {
+const client = new MongoClient(mongoUri, {
   serverApi: {
     version: ServerApiVersion.v1,
     strict: true,
