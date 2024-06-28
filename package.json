@@ -1,0 +1,43 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "start:production": "NODE_ENV=production node dist/index.js",
+    "start:development": "NODE_ENV=development node dist/index.js",
+    "start:staging": "NODE_ENV=staging node dist/index.js",
+    "start:local": "NODE_ENV=local node dist/index.js",
+    "start:test": "NODE_ENV=test node dist/index.js",
+    "dev": "nodemon",
+    "dev:production": "NODE_ENV=production nodemon",
+    "dev:development": "NODE_ENV=development nodemon",
+    "dev:staging": "NODE_ENV=staging nodemon",
+    "dev:local": "NODE_ENV=local nodemon",
+    "dev:test": "NODE_ENV=test nodemon"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-session": "^1.18.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.7.0",
+    "mongoose": "^8.4.4"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.18.0",
+    "@types/jsonwebtoken": "^9.0.6",
+    "@types/node": "^20.14.9",
+    "nodemon": "^3.1.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.2"
+  }
+}
